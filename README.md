@@ -15,8 +15,10 @@ These types of resources are supported:
 
 
 Example Usage:
+------------------------
 
 Backend Config: 
+- - - - - - - - 
 
 ```
 provider "aws" {
@@ -41,6 +43,7 @@ terraform {
 ```
 
 Module Example Usage: 
+------------------------
 
 ```
 module "s3-site" {
