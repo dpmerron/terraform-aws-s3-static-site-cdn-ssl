@@ -19,7 +19,7 @@ A Terraform Module to deploy an ACM SSL certificate, S3 Bucket configured to hos
 Example Usage:
 -
 
-### Backend Config: 
+#### Backend Config: 
 
 ```
 provider "aws" {
@@ -43,7 +43,7 @@ terraform {
 
 ```
 
-### Module Example Usage:
+#### Module Example Usage:
 
 
 ```
