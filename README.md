@@ -1,7 +1,7 @@
 AWS S3 CDN SSL S3 Static Website Terraform module
 ================================================
 
-*About:
+About:
 
 A Terraform Module to deploy the following; 
 
@@ -14,7 +14,7 @@ These types of resources are supported:
 * [StatusCake Monitoring](https://www.terraform.io/docs/providers/statuscake/index.html)
 
 
-* Example Usage:
+Example Usage:
 
 Backend Config: 
 
@@ -40,7 +40,7 @@ terraform {
 
 ```
 
-*Module Example Usage: 
+Module Example Usage: 
 
 ```
 module "s3-site" {
@@ -52,12 +52,13 @@ module "s3-site" {
 
 ```
 
-*Known Issues/Limitations
+Known Issues/Limitations
 ------------------------
 
 Currently, this module supports only subdomains and not top level domains. I will be working to add this functionality in the future.
 
-*Author
+Author
+------------------------
 
 Module written by @danmerron-sig.
 Module Support: dan@dpmerron.co.uk
