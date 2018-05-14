@@ -1,17 +1,22 @@
-***About:
+AWS S3 CDN SSL S3 Static Website Terraform module
+================================================
 
-**A Terraform Module to deploy the following; 
+*About:
 
-* Request and Validate an SSL cert
-* Create a Static Hosted website in an S3 Bucket
-* Deploy S3 Bucket Policies required for hosting static sites.
-* Configure required DNS records in Route 53
-* Create and Configure a Cloudfront CDN to cache the site, terminate SSL & add monitoring
-* Setup StatusCake monitoring for the site
+A Terraform Module to deploy the following; 
 
-***Usage:
+These types of resources are supported:
 
-**Backend Config: 
+* [Route53](https://www.terraform.io/docs/providers/aws/r/route53_record.html)
+* [S3 Bucket](https://www.terraform.io/docs/providers/aws/r/s3_bucket.html)
+* [ACM Request](https://www.terraform.io/docs/providers/aws/d/acm_certificate.html)
+* [Cloudfront Distribution](https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html) 
+* [StatusCake Monitoring](https://www.terraform.io/docs/providers/statuscake/index.html)
+
+
+* Example Usage:
+
+Backend Config: 
 
 ```
 provider "aws" {
@@ -35,7 +40,7 @@ terraform {
 
 ```
 
-**Module Usage: 
+*Module Example Usage: 
 
 ```
 module "s3-site" {
@@ -47,7 +52,12 @@ module "s3-site" {
 
 ```
 
-***Author
+*Known Issues/Limitations
+------------------------
+
+Currently, this module supports only subdomains and not top level domains. I will be working to add this functionality in the future.
+
+*Author
 
 Module written by @danmerron-sig.
 Module Support: dan@dpmerron.co.uk
