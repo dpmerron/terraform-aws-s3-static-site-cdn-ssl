@@ -7,7 +7,7 @@ A Terraform Module to deploy an ACM SSL certificate, S3 Bucket configured to hos
 
 *Currently, this module only supports subdomains, but I will be extending the use of this module to support top level domains soon*
 
-These types of resources are supported:
+#### These types of resources are supported:
 
 * [Route53](https://www.terraform.io/docs/providers/aws/r/route53_record.html)
 * [S3 Bucket](https://www.terraform.io/docs/providers/aws/r/s3_bucket.html)
