@@ -3,7 +3,9 @@ AWS S3 CDN SSL S3 Static Website Terraform module
 
 ### About:
 
-A Terraform Module to deploy the following; 
+A Terraform Module to deploy an ACM SSL certificate, S3 Bucket configured to host a Static HTML website, a Cloudfront Distribution in front providing geo cacheing and SSL Certificate termination and HTTP monitoring via StatusCake. A very cost effective, and fast way to host static HTML/CSS/Javascript based sites on AWS with no server upkeep.
+
+*Currently, this module only supports subdomains, but I will be extending the use of this module to support top level domains soon*
 
 These types of resources are supported:
 
