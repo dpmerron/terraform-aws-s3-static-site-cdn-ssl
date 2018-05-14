@@ -66,3 +66,5 @@ Author
 
 Module written by @danmerron-sig.
 Module Support: dan@dpmerron.co.uk
+
+Contributions and comments are welcomed. 
