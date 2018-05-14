@@ -1,6 +1,17 @@
-Usage:
+***About:
 
-Backend Config: 
+**A Terraform Module to deploy the following; 
+
+* Request and Validate an SSL cert
+* Create a Static Hosted website in an S3 Bucket
+* Deploy S3 Bucket Policies required for hosting static sites.
+* Configure required DNS records in Route 53
+* Create and Configure a Cloudfront CDN to cache the site, terminate SSL & add monitoring
+* Setup StatusCake monitoring for the site
+
+***Usage:
+
+**Backend Config: 
 
 ```
 provider "aws" {
@@ -24,7 +35,7 @@ terraform {
 
 ```
 
-Module Usage: 
+**Module Usage: 
 
 ```
 module "s3-site" {
@@ -35,3 +46,8 @@ module "s3-site" {
 }
 
 ```
+
+***Author
+
+Module written by @danmerron-sig.
+Module Support: dan@dpmerron.co.uk
