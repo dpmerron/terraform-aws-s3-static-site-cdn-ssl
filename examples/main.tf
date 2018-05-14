@@ -1,6 +1,7 @@
 module "site" {
-  source = "https://github.com/dpmerron/terraform-aws-s3-static-site-cdn-ssl.git"
-  domain   = ".example.com"
+  source = "dpmerron/s3-static-site-cdn-ssl/aws"
+
+  domain = ".example.com"
   zoneid = "Z1RAA1AAYPY6T"
-  name = "subdomain"
+  name   = "subdomain"
 }
