@@ -1,7 +1,7 @@
 AWS S3 CDN SSL S3 Static Website Terraform module
 ================================================
 
-About:
+# About:
 
 A Terraform Module to deploy the following; 
 
@@ -15,8 +15,9 @@ These types of resources are supported:
 
 
 Example Usage:
+-
 
-Backend Config: 
+# Backend Config: 
 
 ```
 provider "aws" {
@@ -40,7 +41,8 @@ terraform {
 
 ```
 
-Module Example Usage: 
+# Module Example Usage:
+
 
 ```
 module "s3-site" {
