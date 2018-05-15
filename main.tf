@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "b" {
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = "${aws_s3_bucket.b.bucket_domain_name}"
-    origin_id   = "S3-${var.nam}.${var.domain}"
+    origin_id   = "S3-${var.name}.${var.domain}"
   }
 
   enabled             = true
