@@ -9,6 +9,14 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
+resource "aws_s3_bucket_object" "index" {
+  bucket = "${var.name}.${var.domain}"
+  key    = "index.html"
+  source = "${data.template_file.index.rendered}"
+  etag   = "${md5(file("${data.template_file.index.rendered}"))}"
+}
+
+
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = "${aws_s3_bucket.b.bucket_domain_name}"
