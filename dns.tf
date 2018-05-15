@@ -2,7 +2,7 @@ resource "aws_route53_record" "subdomain-www" {
   zone_id = "${var.zoneid}"
   name    = "www.${var.name}"
   type    = "A"
-  count = "${var.tldn}"
+  count = "${var.subdomain}"
 
   alias {
     name                   = "${aws_cloudfront_distribution.s3_distribution.domain_name}"
@@ -15,7 +15,7 @@ resource "aws_route53_record" "subdomain-root" {
   zone_id = "${var.zoneid}"
   name    = "${var.name}"
   type    = "A"
-  count = "${var.tldn}"
+  count = "${var.subdomain}"
 
   alias {
     name                   = "${aws_cloudfront_distribution.s3_distribution.domain_name}"

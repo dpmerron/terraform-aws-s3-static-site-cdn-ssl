@@ -11,6 +11,11 @@ variable "zoneid" {
 }
 
 variable "tldn" {
-  description = "Specify if the site you are creating is a TLDN or a subdomain. Default is False"
+  description = "Specify if the site you are creating is a TLDN"
+  default     = false
+}
+
+variable "subdomain" {
+  description = "Specify if the site you are creating is a subdomain."
   default     = false
 }
