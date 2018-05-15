@@ -13,7 +13,6 @@ resource "aws_s3_bucket_object" "index" {
   bucket = "${var.name}.${var.domain}"
   key    = "index.html"
   source = "${data.template_file.index.rendered}"
-  etag   = "${md5(file("${data.template_file.index.rendered}"))}"
 }
 
 
