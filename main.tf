@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "b" {
 resource "aws_s3_bucket_object" "index" {
   bucket = "${var.name}.${var.domain}"
   key    = "index.html"
-  source = "$${path.module}/index.html"
+  source = "${path.module}/index.html"
 }
 
 
